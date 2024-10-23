@@ -1,0 +1,73 @@
+*{margin: 0; padding: 0;}
+.pre{
+    white-space: pre;
+}
+.prewrap{
+    white-space: pre-wrap;
+}
+.box{
+    color: white;
+    background-color: blue;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+}
+.box2{
+    margin: 100px 0;
+    height: calc(100vh - 120px);
+    background-color: bisque;
+    background-image: url("../christoph-nolte-lfkapux8leo-unsplash.jpg");
+    background-repeat: no-repeat;
+    /* background-position: 50% 50%; */
+    /* background-position: center center; */
+    /* background-position: 50px 50px; */
+    background-position: calc(100% - 60px) calc(100% - 70px);
+    /* - 같은 부호 앞뒤로 띄어쓰기 해야됨. */
+}
+.desc{
+    padding-bottom: 50px;
+    border-bottom: 5px solid black;
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+}
+.box3{
+    height: 100vh;
+    background-color: aquamarine;
+    background-image: url("../christoph-nolte-lfkapux8leo-unsplash.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 300px auto; */
+    /* background-size: auto 300px; */
+    background-size: 100% auto;
+    background-size: auto 100%;
+    background-size: cover;
+    /* 태그의 공간을 가득 채우는 방식 - 배경 이미지가 잘려서 안보이는 부분이 생길 수도 있다. =>cover */
+    background-size: contain;
+    /* 이미지가 태그의 공간 안에 잘리지 않는 선에서 최대크기로 들어가서 채우는 방식 =>contain */
+    background-position: center center;
+    /* !!!축약형!!! */
+    background: aquamarine url("../christoph-nolte-lfkapux8leo-unsplash.jpg") no-repeat center center /contain;
+    background-color: yellow;
+}
+
+.box4{
+    border: 1px solid white;
+    width: 50vw;
+    height: 50vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: aquamarine url(../christoph-nolte-lfkapux8leo-unsplash.jpg) no-repeat 50% 50% /cover;
+    background-attachment: fixed;
+}
+.box4.blend {
+    background-blend-mode: multiply;
+}
+.blur{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    -webkit-backdrop-filter: blur(10px);
+    /* -webkit-이라는 접두어를 사용하여 바표준 css속성을 임시로 사용하 수 있다. */
+    backdrop-filter: blur(10px);
+}

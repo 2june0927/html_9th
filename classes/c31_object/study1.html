@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 형태 객체(사물) - object</title>
+</head>
+<body>
+    <h1>객체 - object</h1>
+    <p>자바스크립트에서 사물을 나타낼 때 사용하는 표현</p>
+    <p>객체는 ,(콤마)를 사용하여 프로퍼티를 입력할 수 있다.</p>
+    <p>그리고 각각의 프로퍼티는 :(콜론)을 사용하여 key:value형태로 구성되어 있다.</p>
+    <p>여기서 key값을 사용하여 저장된 value값을 가져올 수 있다. key값은 객체안에 속해있는 변수처럼 활용된다.</p>
+    <script>
+        let person1 = [
+            "고이준",
+            23,
+            "여자"
+        ]
+
+
+        person1[0]
+        let person2 = {
+            name:"고이준",
+            age:23,
+            gender:"여자",
+            hobbies:["여행하기","요리하기","산책하기","맛집탐방"],
+            score:{kr:90,eng:100,math:99}
+        }
+
+        console.log(person2["name"])
+        console.log(person2.name)   // 위에꺼랑 의미는 똑같은데 이 형식이 더 많이 사용됨.
+        console.log(person2.age)
+        console.log(person2.gender)
+        console.log(person2.hobbies[1])
+        console.log(person2["hobbies"][1])
+        console.log(person2.score.kr)
+        console.log(person2.score.eng)
+        console.log(person2.score.math)
+
+
+        let class_mates_ObjectArray = [
+            {
+                name:"정현진",
+                gender:"남자",
+                age:44,
+                married:false,
+                hobbies:["어항관리","고양이 관리","달리기"]
+            },
+            {
+                name:"이지은",
+                gender:"여자",
+                age:27,
+                married:true,
+                hobbies:["요리","영화","쇼핑"]
+            },
+            {
+                name:"김리희",
+                gender:"여자",
+                age:27,
+                married:false,
+                hobbies:["캠핑","여행"]
+            },
+            {
+                name:"이미연",
+                gender:"여자",
+                age:25,
+                married:false,
+                hobbies:["연극보기","운동"]
+            },
+            {
+                name:"고이준",
+                gender:"여자",
+                age:23,
+                married:false,
+                hobbies:["노래듣기","산책","여행","요리하기"]
+            },
+            {
+                name:"김정민",
+                gender:"여자",
+                age:29,
+                married:false,
+                hobbies:["뮤지컬보기","맛집탐방","전시회 보기"]
+            },
+            {
+                name:"송지혜",
+                gender:"여자",
+                age:26,
+                married:false,
+                hobbies:["노래듣기","여행","운동","드라마 보기","드라이브 하기"]
+            },
+            {
+                name:"박소연",
+                gender:"여자",
+                age:29,
+                married:false,
+                hobbies:["요리하기","영화","운동"]
+            },
+            {
+                name:"서유담",
+                gender:"여자",
+                age:27,
+                married:false,
+                hobbies:["산책하기","영상 보기","인터넷 쇼핑"]
+            },
+            {
+                name:"문진아",
+                gender:"여자",
+                age:32,
+                married:false,
+                hobbies:["영화보기","카페가기","서점 구경하기","유튜브 보기"]
+            },
+            {
+                name:"안태리",
+                gender:"여자",
+                age:26,
+                married:false,
+                hobbies:["유큐브 보기","잠자기","여행가기","드라마 보기"]
+            },
+            {
+                name:"정동익",
+                gender:"남자",
+                age:37,
+                married:false,
+                hobbies:["산책하기","게임하기","유튜브 보기","맛집 탐방","여행하기"]
+            },
+        ]
+    </script>
+
+
+    <!-- <ul class="classmate">
+        <li>정현진</li>
+        <li>이지은</li>
+        <li>김리희</li>
+        <li>이미연</li>
+        <li>고이준</li>
+        <li>김정민</li>
+        <li>송지혜</li>
+        <li>박소연</li>
+        <li>서유담</li>
+        <li>문진아</li>
+        <li>안태리</li>
+        <li>정동익</li>
+    </ul> -->
+
+
+    <script>
+        document.write(`<ul class="classmate">`)
+            for(let i=0 ; i<12 ; i++){
+                document.write(`<li>${class_mates_ObjectArray[i].name}</li>`)
+            }
+            // <li>${class_mates_ObjectArray[0].name}</li>
+            // <li>${class_mates_ObjectArray[1].name}</li>
+            // <li>${class_mates_ObjectArray[2].name}</li>
+            // <li>${class_mates_ObjectArray[3].name}</li>
+            // <li>${class_mates_ObjectArray[4].name}</li>
+            // <li>${class_mates_ObjectArray[5].name}</li>
+            // <li>${class_mates_ObjectArray[6].name}</li>
+            // <li>${class_mates_ObjectArray[7].name}</li>
+            // <li>${class_mates_ObjectArray[8].name}</li>
+            // <li>${class_mates_ObjectArray[9].name}</li>
+            // <li>${class_mates_ObjectArray[10].name}</li>
+            // <li>${class_mates_ObjectArray[11].name}</li>
+            document.write(`</ul>`)
+        `)
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{margin: 0; padding: 0;}
+.box1{
+    border: 10px solid black;
+    width: 50%;
+    /* 부모태그 너비의 50%라는 뜻 */
+}
+.box2{
+    margin-top: 50px;
+    border: 10px solid black;
+    width: 1000px;
+}
+.box2 section{
+    border: 10px solid salmon;
+    width: 50%;   /*테두리 박스 합치면 520픽셀*/
+}
+.box3{
+    border: 10px solid aqua;
+    margin-top: 50px;
+    width: 800px;
+}
+.box3 section{
+    border: 10px solid darkgreen;
+    width: 50vw;
+    /* vw단위는 viewport width. 무조건 화면 너비에 대한 비율로 바뀜.*/
+    height: 30vh;
+    /* vh단위는 viewport height. 무조건 화면 높이에 대한 비율. */
+}
+.box4{
+    margin-left: 100px;
+    margin-top: 50px;
+    border: 10px solid crimson;
+}
+.box5{
+    border: 10px solid black;
+    margin-top: 50px;
+    /* margin-left: 100px; */
+    width: 100%;
+}

@@ -1,0 +1,57 @@
+p{
+    color: blue;
+}
+div p{
+    /* div태그 안에 포함된 자손들 중에서 모든 p태그들 선택 */
+    color: black;
+}
+div>p{
+    /* div태그 안에 포함된 자식들 중에서 모든 p태그들 선택 */
+    color: green;
+}
+.box>p{
+    /* 11점 */
+    color: darkmagenta;
+}
+.box li>p{
+    color: orange;
+}
+.list1~li{
+    /* ~ - list1 클래스의 다음 형제 태그들 중에서 li태그들 선택 */
+    background: pink;
+}
+.list1+li{
+    /* + - list1클래스의 다음형제 태그 li태그 1개만 선택 */
+    background: blue;
+}
+.box2>h3:nth-child(3){
+    /* box2클래스의 자식태그 h3태그이면서 1번째 자식을 선택한다. 그 다음 h3(title2)는 child(3) */
+    color: orangered;
+}
+.box2>h3:nth-of-type(3){
+    /* box2클래스의 자식 h3태그타입 중에서 3번째 태그 선택, 같은 점수가진 애들끼리 있으면 더 밑에 쓰여진 애가 적용됨. */
+    color: blue;
+}
+.list_box>li:nth-of-type(2n){
+    /* 짝수 지정할 때 2n */
+    font-size: 3rem;
+}
+.list_box>li:nth-of-type(2n-1){
+    /* 홀수 지정할 때 2n-1 or 2n+1 */
+    text-decoration: underline;
+}
+.list_box>li:nth-of-type(3n+1){
+    color: red;
+}
+a[target="_blank"]{
+    background: #000;
+    color: #fff;
+}
+a[href="http://www.naver.com"]{
+    color: #eee;
+    text-decoration: line-through;  /*취소선 스타일*/
+    pointer-events: none;  /*클릭이 안되게 함*/
+}
+p[data-yj="이준이설명"]{
+    font-style: italic;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <form action="#">
+
+<!-- 계정 정보 -->
+        <fieldset>
+            <legend>계정정보</legend>
+            <div>
+                <label for="user_id">아이디</label>
+                <input type="text" id="user_id" required>
+                <button>아이디 중복 확인</button>
+            </div>
+            <div>
+                <label for="user_pw">비밀번호</label>
+                <input type="text" id="user_pw" required>
+            </div>
+            <div>
+                <label for="user_pw_check">비밀번호 확인</label>
+                <input type="text" id="user_pw_check">
+            </div>
+        </fieldset>
+
+<!-- 개인정보 -->
+        <fieldset>
+            <legend>개인정보</legend>
+            <div>
+                <label for="user_name">이름</label>
+                <input type="text" id="user_name" maxlength="6" required>
+            </div>
+            <div>
+                <span>성별</span>
+                <input type="radio" id="male" name="gender" checked><label for="male">남자</label>
+                <input type="radio" id="female" name="gender"><label for="female">여자</label>
+                <input type="radio" id="no_gender" name="gender"><label for="no_gender">선택안함</label>
+            </div>
+            <div>
+                <select id="user_year">
+                    <option value="선택안함">출생년도 선택</option>
+                    <option value="2005">2005년생</option>
+                    <option value="2004">2004년생</option>
+                    <option value="2003">2003년생</option>
+                    <option value="2002">2002년생</option>
+                    <option value="2001">2001년생</option>
+                    <option value="2000">2000년생</option>
+                    <option value="1999">1999년생</option>
+                    <option value="1998">1998년생</option>
+                </select>
+                <label for="user_year">년</label>
+                <select id="user_month">
+                    <option value="월 선택 안함">월 선택</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <label for="user_month">월</label>
+                <select id="user_date">
+                    <option value="일 선택 안함"> 일 선택</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <label for="user_date">일</label>
+            </div>
+        </fieldset>
+
+<!-- 기타정보 -->
+        <fieldset>
+            <legend>기타정보</legend>
+            <div>
+                <span>취미</span>
+                <input type="checkbox" id="hobby1"><label for="hobby1">영화보기</label>
+                <input type="checkbox" id="hobby2" checked><label for="hobby2">음악듣기</label>
+                <input type="checkbox" id="hobby3"><label for="hobby3">식물 키우기</label>
+                <input type="checkbox" id="hobby4"><label for="hobby4">그림 그리기</label>
+                <input type="checkbox" id="hobby5"><label for="hobby5">맛집 탐방</label>
+                <input type="checkbox" id="hobby6"><label for="hobby6">어항관리</label>
+            </div>
+            <div>
+                <label for="user_introducing">자기소개</label>
+                <textarea id="user_introducing">자기소개글을 최대 3000자 까지 남겨주세용</textarea>
+            </div>
+        </fieldset>
+
+        <!-- 얘네는 form태그 밖으로 나가면 안됨!! -->
+        <button type="submit">가입하기</button>
+        <input type="reset" value="다시작성하기">
+    </form>
+</body>
+</html>

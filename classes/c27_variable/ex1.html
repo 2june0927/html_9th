@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적표-예제</title>
+    <link rel="stylesheet" href="./css/ex1.css">
+</head>
+<body>
+    <!-- <p>사용자에게 이름과 국어, 영어, 수학, 사회, 과학 다섯 과목의 점수를 각각 물어보고 입력한 점수를 함산점수, 평균점수를 계산하여 성적표 양식을 만들어주는 페이지를 제작해보자</p> -->
+     <!-- <div class="score">
+        <h2>성적표</h2>
+        <p class="name">이름 : 고이준</p>
+        <table class="score_table">
+            <tr>
+                <th>과목</th>
+                <th>국어</th>
+                <th>영어</th>
+                <th>수학</th>
+                <th>사회</th>
+                <th>과학</th>
+            </tr>
+            <tr>
+                <td>점수</td>
+                <td>20점</td>
+                <td>64점</td>
+                <td>100점</td>
+                <td>87점</td>
+                <td>56점</td>
+            </tr>
+            <tr>
+                <th colspan="6">합산점수</th>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    327점
+                </td>
+            </tr>
+            <tr>
+                <th colspan="6">평균</th>
+            </tr>
+            <tr>
+                <td colspan="6">65.4점</td>
+            </tr>
+        </table>
+        <p>고이준 학생의 평균점수는 65.4점으로 독려가 필요합니다. </p>
+     </div> -->
+     <script>
+        let name = prompt("이름을 입력해 주세요")
+        let kr = Number(prompt("국어 성적을 입력해주세요"))
+        let eng = Number(prompt("영어 성적을 입력해주세요"))
+        let math = Number(prompt("수학 성적을 입력해주세요"))
+        let so = Number(prompt("사회 성적을 입력해주세요"))
+        let si = Number(prompt("과학 성적을 입력해주세요"))
+        let total = (kr+eng+math+so+si).toFixed(2)
+        // let aver = total/4
+
+
+        let n = 3  // 소수 둘째 자리로 계산
+        // let aver = Math.round(total/5*(Math.pow(10,n)))/Math.pow(10,n)
+        let aver = (total/5).toFixed(2) //소수 둘째 자리로 계산!!
+        
+        
+
+
+        console.log("백틱으로 적은 경우에만 ${}처럼 쓸 수 있음")
+
+        document.write(`
+        <div class="score">
+        <h2>성적표</h2>
+        <p class="name">이름 : `+name+`</p>
+        <table class="score_table">
+            <tr>
+                <th>과목</th>
+                <th>국어</th>
+                <th>영어</th>
+                <th>수학</th>
+                <th>사회</th>
+                <th>과학</th>
+            </tr>
+            <tr>
+                <td>점수</td>
+                <td>`+kr+`점</td>
+                <td>`+eng+`점</td>
+                <td>`+math+`점</td>
+                <td>${so}점</td>
+                <td>${si}점</td>
+            </tr>
+            <tr>
+                <th colspan="6">합산점수</th>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    `+total+`점
+                </td>
+            </tr>
+            <tr>
+                <th colspan="6">평균</th>
+            </tr>
+            <tr>
+                <td colspan="6">${aver}점</td>
+            </tr>
+        </table>
+        <p>${name} 학생의 평균점수는 ${aver}점으로 독려가 필요합니다. </p>
+        </div>`)
+
+     </script>
+</body>
+</html>

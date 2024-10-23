@@ -1,0 +1,39 @@
+.box{
+    background: lightyellow;
+    width: 500px;
+    padding: 20px;
+}
+.box section{
+    border: 1px solid blue
+}
+.box section:nth-of-type(1){
+    height: 40px;
+}
+.desc{
+    border: 1px solid #000;
+    width: 150px;
+    height: 150px;
+}
+.hidden{
+    overflow: hidden;
+}
+.scroll{
+    overflow: scroll;
+    /* auto값 사용 가능 */
+}
+.over_y{
+    overflow-y: scroll;
+    /* auto값 사용 가능 */
+}
+.over_x{
+    white-space: nowrap;
+    overflow-x: scroll;
+    /* auto값 사용 가능 */
+}
+.auto{
+    overflow: auto;
+}
+.visible{
+    overflow: visible;
+    /* 기본값 */
+}

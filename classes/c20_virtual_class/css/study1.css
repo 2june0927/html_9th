@@ -1,0 +1,30 @@
+h1:hover{
+    background: blue;
+    color: white;
+}
+h1:active{
+    letter-spacing: 20px;
+    text-decoration: underline;
+    background-color: paleturquoise;
+}
+
+p:before{
+    content:"";
+    /* content:"" 내용이 비어있더라도 이걸 써놓지 않으면 가상태그가 만들어지지 않음 */
+    width: 50px;
+    height: 50px;
+    background: lawngreen;
+    background: url(../img/quote1.png) no-repeat 50% 50% / contain;
+}
+p:after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../img/quote2.png) no-repeat 50% 50% / contain;
+}
+p{
+    display: flex;
+    border: 1px solid blue;
+    /* justify-content: space-between; */
+    align-items: center;
+}

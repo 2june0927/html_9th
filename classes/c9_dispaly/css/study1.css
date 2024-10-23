@@ -1,0 +1,20 @@
+.a{
+    background: pink;
+}
+.b{
+    background: salmon;
+}
+.b li{
+    background: seagreen;
+}
+.c{
+    background: lightgreen;
+    width: 400px;
+    height: 300px;
+}
+.c+.a{display: inline;}
+.d{
+    width: 400px;
+    background: palevioletred;
+    height: 400px;
+}

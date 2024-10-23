@@ -1,0 +1,87 @@
+.a{
+    font-size: 20px;
+}
+.a p{
+    font-size: 2rem;
+    /*2rem -> 16x2 = 32px*/
+}
+.a p:nth-of-type(2n){
+    font-size: 2em;
+    /*2em -> 20x2 = 40px 위에 부모태그가 20px 상속 받고 있었으니까*/
+    background: papayawhip;
+}
+html{
+    font-size: 12px;
+    /* 이제부터 1rem=12 */
+}
+.desc{
+    line-height: 120%;
+    font-size: 2rem;
+    /* 글씨는 24px이 되고 행간은 24x1.2 = 28.8px */
+    line-height: 3;
+    /* 3은 300%라는 뜻. 24x3 = 72px.*/
+    line-height: 100px;
+    /* 꼭 상대단위만 쓰는건 아니고 이렇게 픽셀로 지정할 수도 있음.  */
+    border: 1px solid black;
+}
+.c{
+    font-weight: bold;
+}
+.d{
+    font-style: italic;
+}
+.d address{
+    font-style: normal;
+}
+.e{
+    letter-spacing: 20px;
+}
+.e p:last-of-type{
+    letter-spacing: -2px;
+}
+.f{
+    word-spacing: 30px;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.pre{
+    white-space: pre;
+}
+.h>p:last-of-type{
+    text-indent: 50px;
+}
+.i ul>li:nth-of-type(1){
+    text-decoration: underline;
+}
+.i ul>li:nth-of-type(2) a{
+    text-decoration: none;
+}
+.i ul>li:nth-of-type(3){
+    text-decoration: line-through;
+}
+.j ul+p{
+    width: 400px;
+    border: 1px solid black;
+    text-align: center;
+}
+.k ul+p{
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+.l>*:last-of-type{
+    border: 1px solid black;
+    word-break: break-all;
+    word-break:normal;
+    /* keep-all은 한중일 텍스트에서는 줄을 바꿀 때 단어를 끊지 않는다. 다른 언어에서는 normal과 동일 */
+}
+.m strong{
+    border: 1px solid red;
+    font-size: 5rem;
+}
+.m i{
+    font-size: 3rem;
+    border: 1px solid green;
+    vertical-align: top;
+}

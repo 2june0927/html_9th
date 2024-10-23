@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자 - ternary operator</title>
+</head>
+<body>
+    <h1>삼항연산자</h1>
+    <p>조건?조건이 참일 때 남겨지는 값 : 조건이 남겨지는 값</p>
+    <script>
+        let result1 = 5<3?"a":"b" // true로 간주되면 ? 뒤에 문자가 남고, false로 간주되면 : 뒤의 문자가 남는다.
+        console.log(result1)
+        let result2 =!""?"배고픔":"배부름" // ""이 true로 간주되니까 ? 뒤에 있는 배고픔이 남게된다.
+        console.log(result2)
+        let result3 =3-3?100:50 // 3-3=0, 0은 false로 간주되니까 50이 남게된다.
+        console.log(result3)
+        let score = 95
+        console.log(score>90?"A":score>80?"B":score>70?"C":"D")
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.box{
+    border: 5px solid navy;
+    width: 400px;
+    height: 400px;
+    background-color: paleturquoise;
+}
+.box1{
+    border-radius: 50px;
+    box-shadow: 20px -20px 20px navy;
+}
+.box2{
+    border-radius: 50%;
+    box-shadow:
+    20px 20px 0px lime,
+    -20px -20px 0px royalblue;
+}
+.box3{
+    border-radius: 50px 100px;
+    opacity: 0.3;
+}
+.box4{
+    border-radius: 0px 50px 100px 150px;
+    /* 시계방향으로 각기 다른 값을 지정할 수 있다. */
+}

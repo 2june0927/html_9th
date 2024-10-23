@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자와 숫자</title>
+</head>
+<body>
+    <h1>문자데이터 - string</h1>
+    <p>문자 데이터를 표현하기 위해서는 내용의 앞뒤로 쌍따옴표("")/홑따옴표(''),백틱(``)을 붙여서 표현한다.</p>
+    <p>문자 데이터 끼리 더하면 서로 이어진다.</p>
+    <p>문자 데이터랑 숫자 데이터를 더하면 이어진다. 그리고 그 결과는 문자데이터로 정한다.</p>
+    <p>``백틱으로 문자데이터를 표현하면 문자 데이터 안에서 줄바꿈을 허용한다.</p>
+    <p>"문자데이터".length라고 쓰면 앞의 문자 데이터의 문자 갯수를 계산하여 그 자리에 남긴다.</p>
+    <p>"문자데이터"[순번] 이라고 쓰면 문자 데이터 안에서 순번에 맞는 문자를 불러와 그 자리에 남긴다. (0부터 숫자를 입력할 수 있다.)</p>
+
+
+    <hr>
+
+
+
+    <h1>숫자 데이터 - number</h1>
+    <p>숫자 데이터는 문자 데이터와 같은 쌍따옴표 표시 없이 숫자만 입력하면 된다. 단, 유효한 숫자여애 한다. (ex) 0100과 같은 숫자는 숫자데이터로 인식되지 않으므로 100이라고 입력해야 한다.</p>
+    <p>숫자 데이터 끼리는 사칙연산이 가능하다.</p>
+    
+    
+    <script>
+        // 자바스크립트 공간
+        "안녕"
+        '안녕'
+        // `안녕` 
+        // 3개 다 똑같음
+        "Yijune's bag"
+        'He said "I am hungry"'
+        // `'He' said "Ahhh Is there anything in the fidge?"`
+        // 안에 다른 따옴표 종류가 들어올 경우 다른걸로 써주기 
+        500
+        0400 //이건 유효한 숫자가 아님. 이런거는 문자 데이터로 써야함.
+        1,000 //이것도 안됨. 숫자 아님.
+        // alert("Yijune's bag")
+        // alert(`He said "Hmmmm Is there anything in the fidge?"`)
+        // alert(500+(50-20)*2)
+        // alert(500/4)
+        "안녕"+"하세료"
+        "안녕하세여"
+        alert("안녕"+"하세료")
+        500+20 // 520
+        "안녕"+"하세요" // "안녕하세요"
+        "안녕하"+3 // "안녕하3"
+        alert(300+"100") // 여기서 100은 문자로 쓰였기 때문에 300100이라고 나옴.
+        console.log("hello")
+        document.write("<h1>blahblahablahahhhhhhh</h1>")
+        document.write("<h1 style='background-color: lemonchiffon;'><a href='#'>"+"고이준"+"님 환영합니다</a></h1>")
+        document.write("<p>오늘의 날씨는 "+"매우 맑음"+"입니다.</p>")
+        document.write(`
+        <ul>
+            <li>`+2024+`년</li>
+            <li>`+`10월 17일 목요일`+`</li>
+            <li>`+`오전 9시 50분`+`</li>
+        </ul>`)
+        // 백틱 안에서는 엔터를 쳐도 오류가 나지 않는다. 구조를 그대로 가져올 수 있음.
+        console.log("고이준님 안녕하세요".length)
+        console.log("고이준님 안녕하세요"[1]) 
+        // [0]문자 데이터의 인덱스. 띄어쓰기 포함
+        alert("고이준".length+`1`)  // = 31
+        alert("고이준".length+1) // =4
+        console.log("고이준".length+"안녕하세요".length)
+
+
+
+    </script>
+</body>
+</html>

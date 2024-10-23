@@ -1,0 +1,35 @@
+*{margin: 0; padding: 0;}
+header{
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: aquamarine;
+}
+aside{
+    width: 240px;
+    height: calc(100vh - 56px);
+    background-color: blue;
+    margin-top: 56px;
+    overflow: scroll;
+}
+.category{
+    width: calc(100% - 240px);
+    height: 56px;
+    background-color: palegreen;
+    margin-top: 56px;
+    margin-left: 240px;
+    position: fixed;
+    right: 0;
+    top: 0px;
+}
+main{
+    background-color: cadetblue;
+    height: calc(100% - 112px);
+    position: fixed;
+    left: 240px;
+    top: 112px;
+    width: calc(100% - 240px);
+    overflow: auto;
+}

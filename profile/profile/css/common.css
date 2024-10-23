@@ -1,0 +1,65 @@
+/* common style */
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    font-family: 'Pretendard';
+    font-size: var(--font-size-pc,20px);
+    font-weight: 500;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+.inner_content{
+    width: 1440px;
+    margin: 0 auto;
+}
+.btn_common{
+    font-size: 0.9rem;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0.8rem 1.9rem;
+    border-radius: 3rem;
+}
+.btn_common:hover{
+    color: var(--maincolor);
+}
+.btn_common:active{
+    background-color: var(--maincolor);
+    color: white;
+    border: 1pt solid white;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor: #3f6665;
+    --font-size-pc: 20px;
+    --font-size-tab: 18px;
+    --font-size-mobile:14px;
+    --font-weight-thin:200;
+    --font-weight-bold:700;
+}
+b{
+    /* b태그 쓰면 메인색상으로 바뀜 */
+    color: var(--maincolor);
+}
+i{
+    font-family: "DM Serif Text";
+}
+h3{
+    /* 데코로 들어가는 h3태그 스타일! */
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--maincolor);
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+h4{
+    /* 제목으로 들어가는 h4태그 스타일 */
+    font-weight: 700;
+    font-size: 3.57rem;
+    padding-bottom: 1.3rem;
+}
+

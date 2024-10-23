@@ -1,0 +1,66 @@
+*{margin: 0; padding: 0; }
+@font-face{
+    font-family: "notosanskr";
+    src: url(../ex3/PulmuoneLOHASBold.woff);
+}
+
+.ex{
+    width: 1200px;
+    margin: 0 auto;
+}
+.noto{
+    font-family: "notosanskr";
+    margin: 0 auto;
+}
+.top{
+    height: 250px;
+    margin: 0 auto;
+    background: black url("../ex3/sub_vis01_02.jpg") no-repeat center center /cover;
+    background-position: center center;
+    margin: 0 auto;
+}
+.title{
+    width: 1200px;
+    /* border: 1px solid black; */
+    margin: 50px auto 100px auto;
+    font-size: 20px;
+    background: url("../ex3/sub_tit_line.gif") repeat-x center center;
+    /* background-image: yellow ("../ex3/sub_tit_line.gif") center right; */
+
+}
+.title h2{
+    display: inline;
+    background-color: white;
+    padding-right: 20px;
+}
+.title2{
+    /* border: 1px solid black; */
+    font-size: 52px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 70px 0 70px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.lightgreen{
+    color: #7eae72;
+}
+.script{
+    /* border: 1px solid black; */
+    width: 810px;
+    background-color: #f4f4f4;
+    font-size: 18px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px 90px 50px 90px;
+    margin: 0 auto;
+
+}
+.script p:nth-of-type(2){
+    margin: 25px;
+}
+.script p:nth-of-type(1){
+    font-size: 35px;
+}
+
